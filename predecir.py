@@ -5,6 +5,7 @@ from flask import Flask, request, jsonify
 import numpy as np
 from sklearn.externals import joblib
 import sklearn
+import json
 
 app = Flask(__name__)
 
@@ -13,7 +14,9 @@ def clasificar():
     #cargar el modelo de clasificacion 
     knn = joblib.load("modelo_knn.mod")
      
-    json_data = request.json
+    dato = request.json
+    json_data = json.loads(json.dumps(dato, sort_keys = True))
+    
     print(type(json_data))
     
     sl = json_data['sl']
