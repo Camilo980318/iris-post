@@ -13,7 +13,7 @@ def clasificar():
     #cargar el modelo de clasificacion 
     knn = joblib.load("modelo_knn.mod")
      
-    json_data = request.json()
+    json_data = request.json
     print(type(json_data))
     
     sl = json_data['sl']
