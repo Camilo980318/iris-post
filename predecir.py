@@ -30,7 +30,7 @@ def clasificar():
     
     print(prediction)
     
-    respuesta =  {"sw":sw,"pw":pw,"sl":sl,"pl":pl,"Clase":prediction[0]} 
+    respuesta =  {"sw":sw,"pw":pw,"sl":sl,"pl":pl,"Respuesta a la predicción":prediction[0]} 
     
     print(respuesta)
     
