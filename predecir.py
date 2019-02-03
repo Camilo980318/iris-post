@@ -32,6 +32,8 @@ def clasificar():
     
     respuesta =  {"sl":sl,"sw":sw,"pl":pl,"pw":pw,"Clase":prediction[0]} 
     
+    print(respuesta)
+    
     respuesta2 = str(respuesta)
     
     return respuesta2
